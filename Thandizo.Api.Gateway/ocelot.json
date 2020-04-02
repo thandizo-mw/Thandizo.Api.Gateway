@@ -6,13 +6,14 @@
     // Thandizo Core API config
     {
       "DownstreamPathTemplate": "/api/countries/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
+      "SwaggerKey": "core",
       "Key": "Countries",
       "UpstreamPathTemplate": "/core/countries/{everything}",
       "UpstreamHttpMethod": [
@@ -24,13 +25,14 @@
     },
     {
       "DownstreamPathTemplate": "/api/DataCenters/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
+      "SwaggerKey": "core",
       "Key": "DataCenters",
       "UpstreamPathTemplate": "/core/datacenters/{everything}",
       "UpstreamHttpMethod": [
@@ -42,14 +44,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/Districts/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
       "Key": "Districts",
+      "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/districts/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -60,14 +63,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/FacilityTypes/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
       "Key": "FacilityTypes",
+      "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/facilitytypes/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -78,14 +82,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/HealthCareWorkers/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
       "Key": "HealthCareWorkers",
+      "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/healthcareworkers/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -96,14 +101,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/IdentificationTypes/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
       "Key": "IdentificationTypes",
+      "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/identificationtypes/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -114,14 +120,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/Nationalities/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
       "Key": "Nationalities",
+      "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/nationalities/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -132,14 +139,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/Regions/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 5000
         }
       ],
       "Key": "Regions",
+      "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/regions/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -159,6 +167,7 @@
         }
       ],
       "Key": "PatientDailyStatuses",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patientdailystatuses/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -177,6 +186,7 @@
         }
       ],
       "Key": "PatientFacilityMovements",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patientfacilitymovements/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -195,6 +205,7 @@
         }
       ],
       "Key": "PatientHistory",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patienthistory/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -213,6 +224,7 @@
         }
       ],
       "Key": "PatientLocationMovements",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patientlocationmovements/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -231,6 +243,7 @@
         }
       ],
       "Key": "PatientStatuses",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patientstatuses/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -249,6 +262,7 @@
         }
       ],
       "Key": "PatientTravelHistory",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patienttravelhistory/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -267,6 +281,7 @@
         }
       ],
       "Key": "Statistics",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/statistics/{everything}",
       "UpstreamHttpMethod": [
         "GET"
@@ -282,6 +297,7 @@
         }
       ],
       "Key": "Symptoms",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/symptoms/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -300,6 +316,7 @@
         }
       ],
       "Key": "TransmissionClassifications",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/transmissionclassifications/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -318,6 +335,7 @@
         }
       ],
       "Key": "Patients",
+      "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -337,6 +355,7 @@
         }
       ],
       "Key": "HealthFacilityResources",
+      "SwaggerKey": "resources",
       "UpstreamPathTemplate": "/resources/healthfacilityresources/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -355,6 +374,7 @@
         }
       ],
       "Key": "ResourcesAllocation",
+      "SwaggerKey": "resources",
       "UpstreamPathTemplate": "/resources/ResourcesAllocation/{everything}",
       "UpstreamHttpMethod": [
         "GET",
@@ -373,12 +393,45 @@
         }
       ],
       "Key": "Resources",
+      "SwaggerKey": "resources",
       "UpstreamPathTemplate": "/resources/{everything}",
       "UpstreamHttpMethod": [
         "GET",
         "POST",
         "PUT",
         "DELETE"
+      ]
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "core",
+      "Config": [
+        {
+          "Name": "Thandizo Core API",
+          "Version": "v1",
+          "Url": "http://localhost:5000/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "patients",
+      "Config": [
+        {
+          "Name": "Thandizo Patients API",
+          "Version": "v1",
+          "Url": "http://localhost:5002/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "resources",
+      "Config": [
+        {
+          "Name": "Thandizo Resources API",
+          "Version": "v1",
+          "Url": "http://localhost:5003/swagger/v1/swagger.json"
+        }
       ]
     }
   ]
