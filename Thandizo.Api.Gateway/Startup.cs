@@ -22,6 +22,7 @@ namespace Thandizo.Api.Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerForOcelot(Configuration);
             services.AddOcelot()
                 .AddCacheManager(x =>
                 {
@@ -40,6 +41,11 @@ namespace Thandizo.Api.Gateway
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+
+            app.UseSwaggerForOcelotUI(Configuration, opt =>
+            {
+                opt.PathToSwaggerGenerator = "/swagger/docs";
+            });
 
             app.UseOcelot()
                 .Wait();
