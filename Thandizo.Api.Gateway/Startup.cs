@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Cache.CacheManager;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace Thandizo.Api.Gateway
 {
@@ -41,6 +42,12 @@ namespace Thandizo.Api.Gateway
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod());
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
 
             app.UseSwaggerForOcelotUI(Configuration, opt =>
             {
