@@ -17,7 +17,44 @@
       "Key": "Countries",
       "UpstreamPathTemplate": "/core/countries/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/countries/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "SwaggerKey": "core",
+      "Key": "Countries",
+      "UpstreamPathTemplate": "/core/countries/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-countries-cache"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/DataCenters/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "SwaggerKey": "core",
+      "Key": "DataCenters",
+      "UpstreamPathTemplate": "/core/datacenters/{everything}",
+      "UpstreamHttpMethod": [
         "POST",
         "PUT",
         "DELETE"
@@ -36,7 +73,26 @@
       "Key": "DataCenters",
       "UpstreamPathTemplate": "/core/datacenters/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-datacenters-cache"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Districts/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "Key": "Districts",
+      "SwaggerKey": "core",
+      "UpstreamPathTemplate": "/core/districts/{everything}",
+      "UpstreamHttpMethod": [
         "POST",
         "PUT",
         "DELETE"
@@ -55,7 +111,26 @@
       "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/districts/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-district-cache"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/FacilityTypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "Key": "FacilityTypes",
+      "SwaggerKey": "core",
+      "UpstreamPathTemplate": "/core/facilitytypes/{everything}",
+      "UpstreamHttpMethod": [
         "POST",
         "PUT",
         "DELETE"
@@ -74,11 +149,12 @@
       "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/facilitytypes/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-facility-cache"
+      }
     },
     {
       "DownstreamPathTemplate": "/api/HealthCareWorkers/{everything}",
@@ -112,7 +188,44 @@
       "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/identificationtypes/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/IdentificationTypes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "Key": "IdentificationTypes",
+      "SwaggerKey": "core",
+      "UpstreamPathTemplate": "/core/identificationtypes/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-identification-types-cache"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Nationalities/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "Key": "Nationalities",
+      "SwaggerKey": "core",
+      "UpstreamPathTemplate": "/core/nationalities/{everything}",
+      "UpstreamHttpMethod": [
         "POST",
         "PUT",
         "DELETE"
@@ -131,7 +244,26 @@
       "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/nationalities/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-nationalities-cache"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Regions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "Key": "Regions",
+      "SwaggerKey": "core",
+      "UpstreamPathTemplate": "/core/regions/{everything}",
+      "UpstreamHttpMethod": [
         "POST",
         "PUT",
         "DELETE"
@@ -150,11 +282,12 @@
       "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/regions/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-regions-cache"
+      }
     },
     // Thandizo Patient API configuration
     {
@@ -246,11 +379,30 @@
       "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/patientstatuses/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
         "POST",
         "PUT",
         "DELETE"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PatientStatuses/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "Key": "PatientStatusesCache",
+      "SwaggerKey": "patients",
+      "UpstreamPathTemplate": "/patients/patientstatuses/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "patient-status-cache"
+      }
     },
     {
       "DownstreamPathTemplate": "/api/PatientTravelHistory/{everything}",
@@ -300,7 +452,44 @@
       "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/symptoms/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Symptoms/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "Key": "Symptoms",
+      "SwaggerKey": "patients",
+      "UpstreamPathTemplate": "/patients/symptoms/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "patient-syptoms-cache"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/TransmissionClassifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "Key": "TransmissionClassifications",
+      "SwaggerKey": "patients",
+      "UpstreamPathTemplate": "/patients/transmissionclassifications/{everything}",
+      "UpstreamHttpMethod": [
         "POST",
         "PUT",
         "DELETE"
@@ -319,11 +508,12 @@
       "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/transmissionclassifications/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "patient-transmission-classification-cache"
+      }
     },
     {
       "DownstreamPathTemplate": "/api/Patients/{everything}",
