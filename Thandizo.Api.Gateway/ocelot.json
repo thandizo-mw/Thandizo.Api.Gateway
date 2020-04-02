@@ -325,6 +325,61 @@
         "PUT",
         "DELETE"
       ]
+    },
+    // Thandizo Patient API configuration
+    {
+      "DownstreamPathTemplate": "/api/HealthFacilityResources/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "Key": "HealthFacilityResources",
+      "UpstreamPathTemplate": "/resources/healthfacilityresources/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourcesAllocation/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "Key": "ResourcesAllocation",
+      "UpstreamPathTemplate": "/resources/ResourcesAllocation/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Resources/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "Key": "Resources",
+      "UpstreamPathTemplate": "/resources/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
     }
   ]
 }
