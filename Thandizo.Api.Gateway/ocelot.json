@@ -289,6 +289,44 @@
         "Region": "core-regions-cache"
       }
     },
+    {
+      "DownstreamPathTemplate": "/api/ResponseTeamMappings/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "SwaggerKey": "core",
+      "Key": "ResponseTeamMappings",
+      "UpstreamPathTemplate": "/core/responseteammappings/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResponseTeamMembers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "SwaggerKey": "core",
+      "Key": "ResponseTeamMembers",
+      "UpstreamPathTemplate": "/core/responseteammembers/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
     // Thandizo Patient API configuration
     {
       "DownstreamPathTemplate": "/api/PatientDailyStatuses/{everything}",
