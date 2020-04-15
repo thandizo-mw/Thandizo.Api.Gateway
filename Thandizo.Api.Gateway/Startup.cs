@@ -7,6 +7,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Cache.CacheManager;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Thandizo.Api.Gateway
 {
@@ -24,6 +25,19 @@ namespace Thandizo.Api.Gateway
         {
             services.AddControllers();
             services.AddSwaggerForOcelot(Configuration);
+
+            var authenticationProviderKey = "f9134fc9-d74b-469e-9f20-a46e7541c641";
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(authenticationProviderKey, options =>
+            {
+                // base-address of your identityserver
+                options.Authority = "http://localhost:5004";
+
+                // name of the API resource
+                options.Audience = "api_gateway";
+            });
+
             services.AddOcelot()
                 .AddCacheManager(x =>
                 {
@@ -53,7 +67,8 @@ namespace Thandizo.Api.Gateway
             {
                 opt.PathToSwaggerGenerator = "/swagger/docs";
             });
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseOcelot()
                 .Wait();
         }
