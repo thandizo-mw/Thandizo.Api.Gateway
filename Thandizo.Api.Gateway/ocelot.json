@@ -7,6 +7,10 @@
     {
       "DownstreamPathTemplate": "/api/countries/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -25,6 +29,10 @@
     {
       "DownstreamPathTemplate": "/api/countries/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -45,6 +53,10 @@
     {
       "DownstreamPathTemplate": "/api/DataCenters/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -63,6 +75,10 @@
     {
       "DownstreamPathTemplate": "/api/DataCenters/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -83,6 +99,10 @@
     {
       "DownstreamPathTemplate": "/api/Districts/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -101,6 +121,10 @@
     {
       "DownstreamPathTemplate": "/api/Districts/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -121,6 +145,10 @@
     {
       "DownstreamPathTemplate": "/api/FacilityTypes/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -139,6 +167,10 @@
     {
       "DownstreamPathTemplate": "/api/FacilityTypes/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -159,6 +191,10 @@
     {
       "DownstreamPathTemplate": "/api/HealthCareWorkers/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -178,6 +214,10 @@
     {
       "DownstreamPathTemplate": "/api/IdentificationTypes/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -196,6 +236,10 @@
     {
       "DownstreamPathTemplate": "/api/IdentificationTypes/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -216,6 +260,10 @@
     {
       "DownstreamPathTemplate": "/api/Nationalities/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -234,6 +282,10 @@
     {
       "DownstreamPathTemplate": "/api/Nationalities/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -254,6 +306,10 @@
     {
       "DownstreamPathTemplate": "/api/Regions/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -272,6 +328,10 @@
     {
       "DownstreamPathTemplate": "/api/Regions/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -292,6 +352,10 @@
     {
       "DownstreamPathTemplate": "/api/ResponseTeamMappings/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -311,6 +375,10 @@
     {
       "DownstreamPathTemplate": "/api/ResponseTeamMembers/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "coreapi_global_write coreapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -331,6 +399,10 @@
     {
       "DownstreamPathTemplate": "/api/PatientDailyStatuses/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -350,6 +422,10 @@
     {
       "DownstreamPathTemplate": "/api/PatientFacilityMovements/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -369,6 +445,10 @@
     {
       "DownstreamPathTemplate": "/api/PatientHistory/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -388,6 +468,11 @@
     {
       "DownstreamPathTemplate": "/api/PatientLocationMovements/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
+      "s": null,
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -407,6 +492,10 @@
     {
       "DownstreamPathTemplate": "/api/PatientStatuses/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -425,6 +514,10 @@
     {
       "DownstreamPathTemplate": "/api/PatientStatuses/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -445,6 +538,10 @@
     {
       "DownstreamPathTemplate": "/api/PatientTravelHistory/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -464,6 +561,10 @@
     {
       "DownstreamPathTemplate": "/api/Statistics/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_statistics_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -480,6 +581,10 @@
     {
       "DownstreamPathTemplate": "/api/Symptoms/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -498,6 +603,10 @@
     {
       "DownstreamPathTemplate": "/api/Symptoms/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -518,6 +627,10 @@
     {
       "DownstreamPathTemplate": "/api/TransmissionClassifications/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -536,6 +649,10 @@
     {
       "DownstreamPathTemplate": "/api/TransmissionClassifications/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_global_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -556,6 +673,10 @@
     {
       "DownstreamPathTemplate": "/api/Patients/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_patientdata_read" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -566,16 +687,77 @@
       "SwaggerKey": "patients",
       "UpstreamPathTemplate": "/patients/{everything}",
       "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Patients/{everything}",
+      "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_patientdata_write" ]
+      },
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "Key": "Patients",
+      "SwaggerKey": "patients",
+      "UpstreamPathTemplate": "/patients/{everything}",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Patients/{everything}",
+      "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_patientdata_update" ]
+      },
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "Key": "Patients",
+      "SwaggerKey": "patients",
+      "UpstreamPathTemplate": "/patients/{everything}",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Patients/{everything}",
+      "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "patientapi_patientdata_delete" ]
+      },
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "Key": "Patients",
+      "SwaggerKey": "patients",
+      "UpstreamPathTemplate": "/patients/{everything}",
+      "UpstreamHttpMethod": [
         "DELETE"
       ]
     },
-    // Thandizo Patient API configuration
+    // Thandizo HealthFacility API configuration
     {
       "DownstreamPathTemplate": "/api/HealthFacilityResources/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "resourcesapi_global_read resourcesapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -595,6 +777,10 @@
     {
       "DownstreamPathTemplate": "/api/ResourcesAllocation/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "resourcesapi_global_read resourcesapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -614,6 +800,10 @@
     {
       "DownstreamPathTemplate": "/api/Resources/{everything}",
       "DownstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
+        "AllowedScopes": [ "resourcesapi_global_read resourcesapi_global_write" ]
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
