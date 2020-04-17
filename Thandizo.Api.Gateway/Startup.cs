@@ -36,6 +36,7 @@ namespace Thandizo.Api.Gateway
 
                 // name of the API resource
                 options.Audience = "api_gateway";
+                options.RequireHttpsMetadata = false;
             });
 
             services.AddOcelot()
