@@ -336,7 +336,7 @@
           "Port": 5000
         }
       ],
-      "Key": "Statistics",
+      "Key": "CoreStatistics",
       "SwaggerKey": "core",
       "UpstreamPathTemplate": "/core/statistics/{everything}",
       "UpstreamHttpMethod": [
