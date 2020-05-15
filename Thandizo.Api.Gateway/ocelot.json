@@ -327,6 +327,26 @@
         "DELETE"
       ]
     },
+    {
+      "DownstreamPathTemplate": "/api/Statistics/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "Key": "Statistics",
+      "SwaggerKey": "core",
+      "UpstreamPathTemplate": "/core/statistics/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "core-statistics-cache"
+      }
+    },
     // Thandizo Patient API configuration
     {
       "DownstreamPathTemplate": "/api/PatientDailyStatuses/{everything}",
