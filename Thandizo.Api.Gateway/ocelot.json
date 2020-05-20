@@ -649,6 +649,159 @@
         "PUT",
         "DELETE"
       ]
+    }, 
+    //Thandizo Notifications API configuration
+    {
+      "DownstreamPathTemplate": "/api/NotificationTemplates/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/NotificationTemplates/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NotificationChannels/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/NotificationChannels/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ScheduledNotificationEscalationRules/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/ScheduledNotificationEscalationRules/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ScheduledNotifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/ScheduledNotifications/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ScheduledNotificationLog/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/ScheduledNotificationLog/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/BulkNotifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/BulkNotifications/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/BulkNotificationLog/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/BulkNotificationLog/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Subscribers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "Key": "Notifications",
+      "SwaggerKey": "notifications",
+      "UpstreamPathTemplate": "/notifications/Subscribers/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
     }
   ],
   "SwaggerEndPoints": [
@@ -679,6 +832,16 @@
           "Name": "Thandizo Resources API",
           "Version": "v1",
           "Url": "http://localhost:5003/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "notifications",
+      "Config": [
+        {
+          "Name": "Thandizo Notifications API",
+          "Version": "v1",
+          "Url": "http://localhost:5005/swagger/v1/swagger.json"
         }
       ]
     }
