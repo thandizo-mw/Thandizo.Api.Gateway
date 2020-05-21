@@ -377,7 +377,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "coreapi_global_write coreapi_global_read" ]
+        "AllowedScopes": [ "coreapi_teammembers_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -421,7 +421,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -444,7 +444,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -467,7 +467,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -490,7 +490,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "s": null,
       "DownstreamHostAndPorts": [
@@ -514,7 +514,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -536,7 +536,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -560,7 +560,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_global_write patientapi_global_read" ]
+        "AllowedScopes": [ "patientapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -695,7 +695,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_patientdata_read" ]
+        "AllowedScopes": [ "patientapi_patients_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -715,7 +715,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_patientdata_write" ]
+        "AllowedScopes": [ "patientapi_patients_write" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -735,7 +735,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_patientdata_update" ]
+        "AllowedScopes": [ "patientapi_patients_update" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -755,7 +755,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "patientapi_patientdata_delete" ]
+        "AllowedScopes": [ "patientapi_patients_delete" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -776,7 +776,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "resourcesapi_global_read resourcesapi_global_write" ]
+        "AllowedScopes": [ "resourcesapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -799,7 +799,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "resourcesapi_global_read resourcesapi_global_write" ]
+        "AllowedScopes": [ "resourcesapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
@@ -822,7 +822,7 @@
       "DownstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "f9134fc9-d74b-469e-9f20-a46e7541c641",
-        "AllowedScopes": [ "resourcesapi_global_read resourcesapi_global_write" ]
+        "AllowedScopes": [ "resourcesapi_global_read" ]
       },
       "DownstreamHostAndPorts": [
         {
