@@ -398,6 +398,7 @@
     {
       "DownstreamPathTemplate": "/api/Statistics/{everything}",
       "DownstreamScheme": "http",
+      "AllowedScopes": [ "coreapi_statistics" ],
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
